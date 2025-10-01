@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Smartbook - AudioBook</title>
+  <link rel="stylesheet" href="plyr.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="ID-0-39-Couverture.jpg" alt="Couverture" style="width: 20%; height: auto; margin-bottom: 20px;">
+
+  <div class="logos">
+    <img src="PLANCHE-1a.jpg" alt="Logo AudioBook" style="width: 5%; height: auto; margin-bottom: 20px;">
+    <img src="Logo_resized.jpg" alt="Logo Encyclo-AI" style="width: 10%; height: auto; margin-bottom: 20px;">
+  </div>
+
+<!-- Bloc bouton Play + potentiomètre vitesse -->
+<div class="player-controls">
+  <!-- Gros bouton Play -->
+  <button id="bigPlayBtn" aria-label="Lire ou mettre en pause le livre audio">▶</button>
+
+  <!-- Bloc vitesse -->
+  <div id="speedControl">
+    <div class="speed-label">Vitesse</div>
+    <div class="speed-knob-wrapper">
+      <input type="range" id="speedKnob" min="0.9" max="1.1" step="0.05" value="1" orient="vertical">
+
+      <!-- Colonne repères alignés -->
+      <div id="speedLabels">
+        <span>++</span>
+        <span>+</span>
+        <span>=</span>
+        <span>-</span>
+        <span>--</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Lecteur audio -->
+  <audio id="audioPlayer" controls></audio>
+
+  <!-- Playlist -->
+  <ul id="playlist">
+    <li><a href="Introduction.mp3" style="font-weight: bold;">INTRODUCTION - L'ÉVOLUTION FASCINANTE DE LA MOBILITÉ ÉLECTRIQUE</a></li>
+
+    <li style="font-weight: bold;">Chapitre 1 - LES ORIGINES DE LA VOITURE ÉLECTRIQUE</li>
+    <ul>
+      <li><a href="Chapitre1-1.mp3">1.1 - Les premiers prototypes</a></li>
+      <li><a href="Chapitre1-2.mp3">1.2 - Les innovations de Gaston Planté</a></li>
+      <li><a href="Chapitre1-3.mp3">1.3 - Les défis initiaux</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 2 - L'ÂGE D'OR DES VOITURES ÉLECTRIQUES</li>
+    <ul>
+      <li><a href="Chapitre2-1.mp3">2.1 - Une popularité croissante</a></li>
+      <li><a href="Chapitre2-2.mp3">2.2 - Les taxis électriques</a></li>
+      <li><a href="Chapitre2-3.mp3">2.3 - Les modèles emblématiques</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 3 - LE DÉCLIN FACE AUX MOTEURS À COMBUSTION</li>
+    <ul>
+      <li><a href="Chapitre3-1.mp3">3.1 - L'essor du moteur à combustion</a></li>
+      <li><a href="Chapitre3-2.mp3">3.2 - L'impact de l'industrie pétrolière</a></li>
+      <li><a href="Chapitre3-3.mp3">3.3 - Les limites des batteries électriques</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 4 - LE RENOUVEAU DES VOITURES ÉLECTRIQUES AU XXIE SIÈCLE</li>
+    <ul>
+      <li><a href="Chapitre4-1.mp3">4.1 - Les enjeux climatiques</a></li>
+      <li><a href="Chapitre4-2.mp3">4.2 - L'impact de Tesla</a></li>
+      <li><a href="Chapitre4-3.mp3">4.3 - L'engagement des constructeurs traditionnels</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 5 - LES AVANCÉES TECHNOLOGIQUES DES VÉHICULES ÉLECTRIQUES</li>
+    <ul>
+      <li><a href="Chapitre5-1.mp3">5.1 - Les batteries modernes</a></li>
+      <li><a href="Chapitre5-2.mp3">5.2 - Les systèmes de recharge rapide</a></li>
+      <li><a href="Chapitre5-3.mp3">5.3 - L'électronique de puissance</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 6 - LES POLITIQUES PUBLIQUES ET L'ÉLECTROMOBILITÉ</li>
+    <ul>
+      <li><a href="Chapitre6-1.mp3">6.1 - Les incitations fiscales</a></li>
+      <li><a href="Chapitre6-2.mp3">6.2 - Le développement des infrastructures</a></li>
+      <li><a href="Chapitre6-3.mp3">6.3 - Les objectifs gouvernementaux</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 7 - L'IMPACT ENVIRONNEMENTAL DES VOITURES ÉLECTRIQUES</li>
+    <ul>
+      <li><a href="Chapitre7-1.mp3">7.1 - Réduction des émissions de CO2</a></li>
+      <li><a href="Chapitre7-2.mp3">7.2 - Les défis liés à la production</a></li>
+      <li><a href="Chapitre7-3.mp3">7.3 - Une mobilité durable</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 8 - AVENIR ET PERSPECTIVES DE LA VOITURE ÉLECTRIQUE</li>
+    <ul>
+      <li><a href="Chapitre8-1.mp3">8.1 - Les tendances du marché</a></li>
+      <li><a href="Chapitre8-2.mp3">8.2 - Les innovations futures</a></li>
+      <li><a href="Chapitre8-3.mp3">8.3 - Vers une mobilité autonome</a></li>
+    </ul>
+
+    <li><a href="Conclusion.mp3" style="font-weight: bold;">CONCLUSION - VERS UN AVENIR ÉLECTRISANT</a></li>
+  </ul>
+
+  <p><a href="ID-0-39-Annexes.pdf" target="_blank">📄 Consulter les annexes du livre</a></p>
+  <p><a href="mentions_legales.pdf">Mentions légales</a></p>
+
+  <script src="plyr.polyfilled.js"></script>
+  <script src="lecteur.js"></script>
+</body>
+</html>
